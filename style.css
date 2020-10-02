@@ -1,9 +1,48 @@
 body {
-    font-family: 'Sailec-Medium','Helvetica','san-serif';
+    font-family: Sailec-Regular,"system-ui",-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,"sans-serif";
+}
+
+section {
+    padding: 48px 24px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
+}
+
+p{
+    font-family: Sailec-Regular,"system-ui",-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,"sans-serif";
+    color: #5b6987;
+    font-size: 16px;
+    line-height: 160%;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.title{
+    font-size: 62px;
+    font-weight: 600;
+    line-height: 1.125;
+}
+
+.subtitle{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
 }
 
 .navbar.navbar-default.navbar-fixed-top {
@@ -69,23 +108,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-button{
-    text-decoration: none;
+    transition: background-color 0.25s linear,border-color 0.25s linear,color 0.25s linear;
     align-items: center;
-    float: right;
     border-width: 1px;
     margin-right: 5px;
     margin-top: 5px;
     padding: 10px 16px 10px;
-    background-color: #006aff;
-    border-color: transparent;
-    color: #fff;
+    background-color: white;
+    border: 1px solid transparent;
+    border-color: #006aff;
     border-radius: 5px;
+    float: right;
 }
 
 .navbar-button:hover {
-    text-decoration: none;
-    transition: background-color 0.25s linear,border-color 0.25s linear,color 0.25s linear;
-    background-color: white
+    background-color: #006aff;
+    border: 1px solid transparent;
+    border-color: #006aff;
+    color: white;
 }
 
 main {
@@ -95,7 +135,16 @@ main {
 .hero{
     background-color: #0061FF;
     color: white;
-    align-content: center;
+    align-items: center;
+    background-image: url("https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg");
+    background-position: center;
+    background-size: cover;
+}
+
+.hero .subtitle{
+    margin-top: 10px;
+    font-size: 24px;
+    color: white;
 }
 
 .card{
@@ -105,6 +154,7 @@ main {
     box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
     position: relative;
     margin: auto;
+    font-weight: 700;
 }
 
 .card-header{
@@ -113,6 +163,10 @@ main {
     background-color: #f3f5f9;
     text-align: center;
     color: #031b4e;
+    font-size: 18px;
+}
+
+.card-header .title{
     font-size: 18px;
 }
 
@@ -133,6 +187,7 @@ main {
     padding: 16px;
     color: #031b4e;
     appearance: none;
+    font-weight: normal;
 }
 
 .card-content span input:focus{
@@ -148,22 +203,133 @@ main {
     width: 100%;
     padding: 10px;
     border-radius: 4px;
+    font-family: 'Sailec-Bold','Helvetica','san-serif';
 }
 
 .card-button:hover{
     background-color: #1633ff
 }
 
-.hero p{
+.card-end{
+    border-top: 1px solid #f3f5f9;
+    padding: 32px;
+    width: 100%;
+}
+
+.card-end .row,
+.row .card-end-button{
+    padding: 0;
+    margin: 0;
+}
+
+.card-end-button:first-child{
+    padding-right: 10px;
+}
+
+.card-end-button button{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #0069ff;
+    color: #0069ff;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.under-card{
     margin-top: 10px;
+    color: white;
+}
+
+.logogrid{
+    background-color: #F3F5F9;
+}
+
+.logogrid h6{
+    font-size: 14px;
+    letter-spacing: 0.05em;
+}
+
+
+.logos{
+    margin-top: 32px;
+}
+
+.logos img{
+    margin: auto;
+    display: block;
+}
+
+.logo-end{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.logo-end a{
+    color: #0069ff;
+}
+
+.logo-end a:hover{
+    color: #1633ff;
+}
+
+.scale .title{
+    color: #031b4e;
+    font-size: 36px;
+}
+
+.scale .subtitle{
+    font-size: 20px;
+    color: #5b6987;
+    margin-bottom: 70px;
+}
+
+.scale-button{
+    border: none;
+    background: none;
+    display: block;
+    padding: 15px 20px;
+    border-radius: 0px;
+    white-space: inherit;
+    height: auto;
+    text-align: left;
+    color: rgba(3, 27, 78, 0.6);
+}
+
+.scale .deploy img{
+    margin-top: 20px;
+}
+
+.scale .deploy h5{
+    font-family: 'Sailec-Bold','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Helvetica Neue','Helvetica','Arial','sans-serif';
+    color: #031b4e;
+    line-height: 120%;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 18px;
 }
 
 @media screen and (min-width: 992px) {
     .navbar-default .navbar-brand {
         font-size: 22px;
     }
+}
 
-    section {
-        padding: 100px 0;
+@media screen and (max-width: 1200px) {
+    .hero h1,
+    .hero p{
+        text-align: center;
+    }
+
+    .scale .menu{
+        text-align: center;
+    }
+
+    .scale .deploy{
+        text-align: center;
+    }
+
+    .scale button{
+        display: inline-block;
     }
 }
