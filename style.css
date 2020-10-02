@@ -48,6 +48,7 @@ a:hover{
 .navbar.navbar-default.navbar-fixed-top {
     border: 0;
     background-color: white;
+    box-shadow: rgba(3,27,78,0.1) 0px 2px 4px;
 }
 
 .navbar-default .navbar-brand{
@@ -309,6 +310,91 @@ main {
     font-size: 18px;
 }
 
+.screen{
+    background-color: #f3f5f9;
+}
+
+.screen .title{
+    color: #031b4e;
+    font-size: 36px;
+}
+
+.screen .subtitle{
+    font-size: 20px;
+    max-width: 750px;
+    margin: auto;
+}
+
+.screens{
+    margin-top: 64px;
+}
+
+.screens img{
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(3,27,78,0.06);
+}
+
+.screens p{
+    text-align: center;
+    margin: 32px auto 0 auto;
+}
+
+.buttons{
+    margin-top: 32px;
+    text-align: center;
+}
+
+.circle-button:first-of-type{
+    background-color: #0069ff;
+}
+
+.circle-button{
+    border-radius: 100%;
+    border: 2px solid white;
+    width: 10px;
+    height: 10px;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    padding: 3px;
+    cursor: pointer;
+    outline: 0;
+    margin: 0 6px;
+    background-color: transparent;
+    border: 2px solid #0069ff;
+    display: inline-block;
+}
+
+.business h2{
+    color: #031b4e;
+    font-size: 36px;
+}
+
+.business-content img{
+    margin-top: 64px;
+}
+
+.business-content h5{
+    color: #031b4e;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.business-content p{
+    margin-top: 20px;
+}
+
+.business-content a{
+    margin: 20px auto;
+    color: #0069ff;
+}
+
+.business-content a:hover{
+    color: #1633ff;
+}
+
 @media screen and (min-width: 992px) {
     .navbar-default .navbar-brand {
         font-size: 22px;
@@ -331,5 +417,9 @@ main {
 
     .scale button{
         display: inline-block;
+    }
+
+    .business-content{
+        text-align: center;
     }
 }
